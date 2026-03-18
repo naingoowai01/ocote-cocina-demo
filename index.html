@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocote Cocina — Cocina Contemporánea Oaxaqueña</title>
+<meta name="description" content="Fuego, tierra y tradición. Cocina de autor inspirada en los sabores ancestrales de Oaxaca. Reserva tu mesa en Ocote Cocina.">
+<meta property="og:title" content="Ocote Cocina — Contemporary Oaxacan Kitchen">
+<meta property="og:description" content="Fire, earth, and tradition. Author's cuisine inspired by the ancestral flavors of Oaxaca.">
+<meta property="og:type" content="restaurant">
+<meta property="og:image" content="./assets/hero.png">
+<link rel="canonical" href="#">
+
+<!-- Fonts: Cabinet Grotesk (display) + General Sans (body) from Fontshare -->
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2c-1.5 5-4 8-4 13a4 4 0 008 0c0-5-2.5-8-4-13z' fill='%23b87333'/%3E%3Cpath d='M14 20v10M18 20v10' stroke='%238b3a2a' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="./style.css">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Ocote Cocina",
+  "description": "Contemporary Oaxacan cuisine with open-kitchen concept and wood-fired cooking",
+  "servesCuisine": ["Oaxacan", "Contemporary Mexican"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5 de Mayo 107, Centro",
+    "addressLocality": "Oaxaca de Juárez",
+    "postalCode": "68000",
+    "addressCountry": "MX"
+  },
+  "telephone": "+52 951 292 9554",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "1069"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "13:00",
+    "closes": "22:30"
+  },
+  "priceRange": "$$$",
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+</head>
+<body>
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="Ocote Cocina — Home">
+        <!-- SVG Logo: Stylized Ocote Pine Torch / Flame -->
+        <svg class="logo-mark" viewBox="0 0 40 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="42">
+          <!-- Flame body -->
+          <path d="M20 2C17.5 9 14 14 12.5 20c-1.5 6 0 11 3 14.5S20 38 20 38s2-1 4.5-4.5 4.5-8.5 3-14.5C26 14 22.5 9 20 2z" fill="#b87333" opacity="0.9"/>
+          <!-- Inner flame -->
+          <path d="M20 10c-1.2 4-3 7-3.5 11-.5 3.5 1 6 3.5 7.5 2.5-1.5 4-4 3.5-7.5C23 17 21.2 14 20 10z" fill="#f5f0e6" opacity="0.35"/>
+          <!-- Torch handle -->
+          <rect x="17.5" y="36" width="5" height="14" rx="1.5" fill="#8b3a2a"/>
+          <!-- Handle detail -->
+          <rect x="16" y="38" width="8" height="2" rx="1" fill="#8b3a2a" opacity="0.6"/>
+        </svg>
+        <span class="logo-text">Ocote</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="#about" class="nav-link" data-es="Nosotros" data-en="About">Nosotros</a>
+        <a href="#menu" class="nav-link" data-es="Menú" data-en="Menu">Menú</a>
+        <a href="#location" class="nav-link" data-es="Ubicación" data-en="Location">Ubicación</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch to English" data-es="EN" data-en="ES">EN</button>
+        <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" data-es="Reservar" data-en="Reserve">Reservar</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="#about" class="mobile-nav-link" data-es="Nosotros" data-en="About">Nosotros</a>
+        <a href="#menu" class="mobile-nav-link" data-es="Menú" data-en="Menu">Menú</a>
+        <a href="#location" class="mobile-nav-link" data-es="Ubicación" data-en="Location">Ubicación</a>
+      </nav>
+      <div class="mobile-menu__actions">
+        <button class="lang-toggle lang-toggle--mobile" aria-label="Switch to English" data-es="EN" data-en="ES">EN</button>
+        <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="btn btn--primary" data-es="Reservar" data-en="Reserve">Reservar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="./assets/hero.png" alt="Interior of Ocote Cocina — open kitchen with brick walls, Edison bulbs, and wood-fired oven" loading="eager" width="1600" height="900" fetchpriority="high">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">Ocote</h1>
+      <p class="hero__subtitle" data-es="Cocina Contemporánea Oaxaqueña" data-en="Contemporary Oaxacan Kitchen">Cocina Contemporánea Oaxaqueña</p>
+      <div class="hero__rating">
+        <span class="stars" aria-label="4.6 out of 5 stars">★★★★★</span>
+        <span class="rating-text">4.6 <span data-es="(1,069 reseñas)" data-en="(1,069 reviews)">(1,069 reseñas)</span></span>
+      </div>
+      <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg hero__cta" data-es="Reservar Mesa" data-en="Reserve a Table">Reservar Mesa</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__label" data-es="Nuestra Historia" data-en="Our Story">Nuestra Historia</div>
+        <h2 class="about__heading" data-es="Fuego, tierra y tradición" data-en="Fire, earth, and tradition">Fuego, tierra y tradición</h2>
+        <p class="about__text" data-es="Cocina de autor inspirada en los sabores ancestrales de Oaxaca. En Ocote honramos las técnicas milenarias del fuego y la tierra, reinterpretándolas con una mirada contemporánea. Cada platillo nace del horno de leña, del comal y de ingredientes cultivados por productores locales." data-en="Author's cuisine inspired by the ancestral flavors of Oaxaca. At Ocote we honor the ancient techniques of fire and earth, reinterpreting them with a contemporary vision. Every dish is born from the wood-fired oven, the comal, and ingredients cultivated by local producers.">Cocina de autor inspirada en los sabores ancestrales de Oaxaca. En Ocote honramos las técnicas milenarias del fuego y la tierra, reinterpretándolas con una mirada contemporánea. Cada platillo nace del horno de leña, del comal y de ingredientes cultivados por productores locales.</p>
+        <div class="about__divider">
+          <svg viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="flame-divider">
+            <path d="M0 4h45c2-3 5-4 7.5-4s4 1.5 5 3c1-1.5 2.5-3 5-3S67 1 70 4h50" stroke="#b87333" stroke-width="1"/>
+            <circle cx="60" cy="3" r="2" fill="#b87333" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="about__features">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M12 2C10 7 7 10 7 15a5 5 0 0010 0c0-5-3-8-5-13z"/></svg>
+            </div>
+            <h3 class="feature__title" data-es="Horno de Leña" data-en="Wood-Fired Oven">Horno de Leña</h3>
+            <p class="feature__desc" data-es="Cocina a fuego vivo con maderas oaxaqueñas" data-en="Live-fire cooking with Oaxacan woods">Cocina a fuego vivo con maderas oaxaqueñas</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg>
+            </div>
+            <h3 class="feature__title" data-es="Cocina Abierta" data-en="Open Kitchen">Cocina Abierta</h3>
+            <p class="feature__desc" data-es="Vive la experiencia desde la barra del chef" data-en="Experience the action from the chef's counter">Vive la experiencia desde la barra del chef</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M12 22s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/><circle cx="12" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="feature__title" data-es="Origen Local" data-en="Local Origin">Origen Local</h3>
+            <p class="feature__desc" data-es="Ingredientes de productores oaxaqueños" data-en="Ingredients from Oaxacan producers">Ingredientes de productores oaxaqueños</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ MENU HIGHLIGHTS ═══════════ -->
+    <section class="menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__header">
+          <div class="menu__label" data-es="Selección" data-en="Selection">Selección</div>
+          <h2 class="menu__heading" data-es="Del Horno a tu Mesa" data-en="From the Oven to Your Table">Del Horno a tu Mesa</h2>
+          <p class="menu__subtext" data-es="Platillos destacados · Precios en MXN" data-en="Featured dishes · Prices in MXN">Platillos destacados · Precios en MXN</p>
+        </div>
+
+        <div class="menu__grid">
+          <!-- Dish 1 -->
+          <article class="dish">
+            <div class="dish__number">01</div>
+            <div class="dish__content">
+              <h3 class="dish__name" data-es="Pulpo al Horno de Leña" data-en="Wood-Fired Octopus">Pulpo al Horno de Leña</h3>
+              <p class="dish__desc" data-es="Pulpo braseado lentamente en el horno de leña, acompañado de puré de frijol negro y salsa de chile ancho" data-en="Slow-braised octopus in the wood-fired oven, accompanied by black bean purée and ancho chile sauce">Pulpo braseado lentamente en el horno de leña, acompañado de puré de frijol negro y salsa de chile ancho</p>
+            </div>
+            <div class="dish__price">$280–320</div>
+          </article>
+
+          <!-- Dish 2 -->
+          <article class="dish">
+            <div class="dish__number">02</div>
+            <div class="dish__content">
+              <h3 class="dish__name" data-es="Costilla de Res en Mole de Chicatana" data-en="Beef Short Rib in Chicatana Ant Mole">Costilla de Res en Mole de Chicatana</h3>
+              <p class="dish__desc" data-es="Costilla confitada 12 horas, bañada en mole elaborado con hormigas chicatanas tostadas" data-en="12-hour confit short rib, bathed in mole crafted with toasted chicatana ants">Costilla confitada 12 horas, bañada en mole elaborado con hormigas chicatanas tostadas</p>
+            </div>
+            <div class="dish__price">$260–300</div>
+          </article>
+
+          <!-- Dish 3 -->
+          <article class="dish">
+            <div class="dish__number">03</div>
+            <div class="dish__content">
+              <h3 class="dish__name" data-es="Maíz Criollo con Mantequilla de Chapulín" data-en="Heirloom Corn with Grasshopper Butter">Maíz Criollo con Mantequilla de Chapulín</h3>
+              <p class="dish__desc" data-es="Elote criollo asado al carbón con mantequilla infusionada de chapulines y queso fresco" data-en="Charcoal-roasted heirloom corn with grasshopper-infused butter and fresh cheese">Elote criollo asado al carbón con mantequilla infusionada de chapulines y queso fresco</p>
+            </div>
+            <div class="dish__price">$140–180</div>
+          </article>
+
+          <!-- Dish 4 -->
+          <article class="dish">
+            <div class="dish__number">04</div>
+            <div class="dish__content">
+              <h3 class="dish__name" data-es="Tataki de Atún con Chile Pasilla" data-en="Tuna Tataki with Pasilla Chile">Tataki de Atún con Chile Pasilla</h3>
+              <p class="dish__desc" data-es="Atún sellado al momento, salsa de chile pasilla oaxaqueño y aguacate de la sierra" data-en="Flash-seared tuna, Oaxacan pasilla chile sauce, and highland avocado">Atún sellado al momento, salsa de chile pasilla oaxaqueño y aguacate de la sierra</p>
+            </div>
+            <div class="dish__price">$240–280</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ LOCATION ═══════════ -->
+    <section class="location" id="location">
+      <div class="location__container">
+        <div class="location__info">
+          <div class="location__label" data-es="Encuéntranos" data-en="Find Us">Encuéntranos</div>
+          <h2 class="location__heading" data-es="Visítanos" data-en="Visit Us">Visítanos</h2>
+
+          <div class="info-block">
+            <div class="info-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M12 22s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/><circle cx="12" cy="11" r="2"/></svg>
+            </div>
+            <div>
+              <h3 class="info-block__title" data-es="Dirección" data-en="Address">Dirección</h3>
+              <p class="info-block__text">5 de Mayo 107, Centro<br>68000 Oaxaca de Juárez</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h3 class="info-block__title" data-es="Horario" data-en="Hours">Horario</h3>
+              <p class="info-block__text" data-es="Todos los días · 1:00 – 10:30 PM" data-en="Daily · 1:00 – 10:30 PM">Todos los días · 1:00 – 10:30 PM</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h3 class="info-block__title" data-es="Teléfono" data-en="Phone">Teléfono</h3>
+              <a href="tel:+529512929554" class="info-block__link">+52 951 292 9554</a>
+            </div>
+          </div>
+
+          <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--whatsapp" data-es="Reservar por WhatsApp" data-en="Reserve via WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-es="Reservar por WhatsApp" data-en="Reserve via WhatsApp">Reservar por WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.4!2d-96.7249!3d17.0622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c722f4e4a0e0e7%3A0x0!2s5+de+Mayo+107%2C+Centro%2C+68000+Oaxaca+de+Ju%C3%A1rez%2C+Oax.!5e0!3m2!1ses!2smx!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ocote Cocina location on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <svg class="footer__logo" viewBox="0 0 40 52" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="36" aria-hidden="true">
+          <path d="M20 2C17.5 9 14 14 12.5 20c-1.5 6 0 11 3 14.5S20 38 20 38s2-1 4.5-4.5 4.5-8.5 3-14.5C26 14 22.5 9 20 2z" fill="currentColor" opacity="0.9"/>
+          <rect x="17.5" y="36" width="5" height="14" rx="1.5" fill="currentColor" opacity="0.5"/>
+        </svg>
+        <span class="footer__name">Ocote Cocina</span>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://facebook.com/ocotecocina" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Ocote Cocina. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__attribution">Created with Perplexity Computer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ FLOATING WHATSAPP ═══════════ -->
+  <a href="https://wa.me/529512929554" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
